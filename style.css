@@ -9,5 +9,14 @@
 .canvas
 {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+}
+
+.controle
+{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    gap: 1rem;
 }
