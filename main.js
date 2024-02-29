@@ -40,7 +40,7 @@ function DrawTree(amount)
     let rotateAngleL = Left
     DrawLine(0,0,0,-amount)
     ctx.translate(0,-amount)
-    if(amount > 1)
+    if(amount > 4)
     {
         ctx.save()
         ctx.rotate((rotateAngleR * Math.PI) / 180)
