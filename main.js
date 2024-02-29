@@ -32,6 +32,10 @@ function DrawTree(amount)
     let angle = 0.67
     const Right = document.querySelector('#right').value
     const Left = document.querySelector('#left').value
+    const RightValue = document.querySelector('.rightValue')
+    const LeftValue = document.querySelector('.leftValue')
+    RightValue.innerText = `${Right}°`
+    LeftValue.innerText = `${Left}°`
     let rotateAngleR = Right
     let rotateAngleL = Left
     DrawLine(0,0,0,-amount)
