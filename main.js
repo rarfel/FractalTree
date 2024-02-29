@@ -22,14 +22,9 @@ ReDraw()
 
 function ReDraw()
 {
-    ctx.clearRect(0,0,800,700)
+    ctx.clearRect(-width/2,-height,width,height)
     DrawTree(200)
 }
-
-// canvas.addEventListener("mousemove",e=>
-// {
-//     console.log(e.x,e.y);
-// }) 
 
 function DrawTree(amount)
 {   
