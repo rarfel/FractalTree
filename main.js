@@ -5,6 +5,8 @@ canvas.height = canvas.clientHeight
 canvas.width = canvas.clientWidth
 let width = canvas.width
 let height = canvas.height
+let regua
+DeterminateSize()
 
 ctx.translate(width/2,height)
 
@@ -20,10 +22,45 @@ function DrawLine(x1,y1,x2,y2)
 
 ReDraw()
 
+window.onresize = () =>
+{
+    canvas.height = canvas.clientHeight
+    canvas.width = canvas.clientWidth
+    let width = canvas.width
+    let height = canvas.height
+    ctx.translate(width/2,height)
+    DeterminateSize()
+    ReDraw()
+}
+
+function DeterminateSize()
+{
+    if(window.innerWidth <= 350)
+    {
+        regua = 70
+    }
+    if(window.innerWidth >= 350)
+    {
+        regua = 100
+    }
+    if(window.innerWidth >= 510)
+    {
+        regua = 150
+    }
+    if(window.innerWidth >= 680)
+    {
+        regua = 200
+    }
+    if(window.innerWidth >= 850)
+    {
+        regua = 250
+    }
+}
+
 function ReDraw()
 {
     ctx.clearRect(-width/2,-height,width,height)
-    DrawTree(200)
+    DrawTree(regua)
 }
 
 function DrawTree(amount)
