@@ -28,8 +28,8 @@ window.onresize = () =>
     canvas.width = canvas.clientWidth
     let width = canvas.width
     let height = canvas.height
-    ctx.translate(width/2,height)
     DeterminateSize()
+    ctx.translate(width/2,height)
     ReDraw()
 }
 
