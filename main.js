@@ -38,14 +38,17 @@ function DeterminateSize()
     if(window.innerWidth <= 350)
     {
         regua = 70
+        let height = canvas.height/2
     }
     if(window.innerWidth >= 350)
     {
         regua = 100
+        let height = canvas.height
     }
     if(window.innerWidth >= 510)
     {
         regua = 150
+        let height = canvas.height * 2
     }
 }
 
