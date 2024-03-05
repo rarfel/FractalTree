@@ -47,10 +47,6 @@ function DeterminateSize()
     {
         regua = 150
     }
-    if(window.innerWidth >= 680)
-    {
-        regua = 200
-    }
 }
 
 function ReDraw()
